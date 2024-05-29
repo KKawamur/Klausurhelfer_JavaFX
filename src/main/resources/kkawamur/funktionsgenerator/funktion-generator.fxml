@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kkawamur.funktionsgenerator.FunktionGeneratorController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="290.0">
+         <children>
+            <Pane prefHeight="10000.0" prefWidth="290.0" />
+            <HBox prefHeight="100.0" prefWidth="290.0" spacing="5.0">
+               <children>
+                  <ListView fx:id="funktionSelectionList" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" />
+                  <VBox prefHeight="200.0" prefWidth="90.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="240.0" />
+                        <HBox minWidth="90.0" prefHeight="100.0" prefWidth="90.0">
+                           <children>
+                              <Pane minWidth="20.0" prefHeight="200.0" prefWidth="20.0" />
+                              <Button fx:id="funktionAddButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="50.0" text="+" />
+                              <Pane minWidth="20.0" prefHeight="200.0" prefWidth="20.0" />
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <Pane prefHeight="10000.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <Canvas fx:id="viewCanvas" height="800.0" width="800.0">
+         <HBox.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </HBox.margin>
+      </Canvas>
+      <VBox prefHeight="600.0" prefWidth="350.0">
+         <children>
+            <ScrollPane prefHeight="450.0" prefWidth="325.0">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="300.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</HBox>

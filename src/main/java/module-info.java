@@ -10,6 +10,6 @@ module FunktionGenerator {
 
 //    exports Funktionsgenerator;
 //    opens Funktionsgenerator to javafx.fxml;
-    exports FunktionGenerator;
-    opens FunktionGenerator to javafx.fxml;
+    exports ApplicationHandler;
+    opens ApplicationHandler to javafx.fxml;
 }

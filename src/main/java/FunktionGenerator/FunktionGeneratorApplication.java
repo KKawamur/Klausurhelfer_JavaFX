@@ -1,4 +1,4 @@
-package kkawamur.funktionsgenerator;
+package FunktionGenerator;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ import java.io.IOException;
 public class FunktionGeneratorApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(FunktionGeneratorApplication.class.getResource("funktion-generator.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(FunktionGeneratorApplication.class.getResource("/funktion-generator.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1440, 800);
         stage.setTitle("Funktionsgenerator");
         stage.setScene(scene);

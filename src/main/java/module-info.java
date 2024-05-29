@@ -1,4 +1,4 @@
-module kkawamur.funktionsgenerator {
+module FunktionGenerator {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -7,6 +7,9 @@ module kkawamur.funktionsgenerator {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens kkawamur.funktionsgenerator to javafx.fxml;
-    exports kkawamur.funktionsgenerator;
+
+//    exports Funktionsgenerator;
+//    opens Funktionsgenerator to javafx.fxml;
+    exports FunktionGenerator;
+    opens FunktionGenerator to javafx.fxml;
 }

@@ -11,7 +11,7 @@ public class FunktionGeneratorApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(FunktionGeneratorApplication.class.getResource("/funktion-generator.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1440, 800);
+        Scene scene = new Scene(fxmlLoader.load(), 1440, 900);
         stage.setTitle("Funktionsgenerator");
         stage.setScene(scene);
         stage.show();

@@ -1,10 +1,12 @@
 package ApplicationHandler;
 
 import Controllers.CanvasController;
+import Controllers.FunctionGenerationController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
@@ -19,26 +21,18 @@ public class FunktionGeneratorController implements Initializable {
     private ListView<String> funktionSelectionList;
     @FXML
     private Canvas viewCanvas;
-
+    @FXML
+    private Button funktionAddButton;
     CanvasController canvasController;
+    FunctionGenerationController functionGenerationController;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         canvasController = new CanvasController(viewCanvas, 10);
-        initializeFunktionList();
+        functionGenerationController = new FunctionGenerationController(funktionSelectionList,funktionAddButton);
+        functionGenerationController.initializeFunktionList();
         canvasController.drawCanvas();
     }
 
-    private void initializeFunktionList(){
-        String[] funktionTypes = {
-                "Lineare Funktionen",
-                "Quadratische Funktionen",
-                "Exponentialfunktionen",
-                "Ganzrationale Funktionen"
-        };
-
-        funktionSelectionList.getItems().addAll(funktionTypes);
-    }
-
-
+    private void addFunktionToHolder(){}
 }
